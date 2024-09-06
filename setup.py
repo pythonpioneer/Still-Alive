@@ -17,7 +17,7 @@ setup(
     description="A Python package that moves the mouse slightly at regular intervals",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/pythonpioneer/still_alive",  # Project URL
+    url="https://github.com/pythonpioneer/Still-Alive",  # Project URL
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
