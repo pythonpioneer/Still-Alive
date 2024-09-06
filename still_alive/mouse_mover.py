@@ -44,7 +44,7 @@ def parse_time_arg(time_str):
         raise argparse.ArgumentTypeError(f"Invalid time format: '{time_str}'. Expected HH:MM format.")
 
 
-if __name__ == "__main__":
+def main():
     # Create an argument parser
     parser = argparse.ArgumentParser(description="Move mouse slightly within a specified time range.")
 
@@ -89,3 +89,7 @@ if __name__ == "__main__":
     # Call the recursive function with the specified interval
     print(f"Starting mouse movement at {start_time.time()} until {end_time.time()} with {args.interval}-second intervals.")
     recursive_function(end_time.time(), args.interval)
+
+
+if __name__ == "__main__":
+    main()
