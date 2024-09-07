@@ -23,10 +23,6 @@ setup(
         "Operating System :: OS Independent",
         "License :: OSI Approved :: MIT License",
         "Environment :: Console",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Utilities",
-        "Development Status :: 5 - Production/Stable",
-        "programming Language :: Python :: 3.6",
     ],
     python_requires='>=3.6',
 )
