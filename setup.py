@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="still_alive",  # Package name
-    version="1.0.1",  # Version
+    version="1.0.2",  # Version
     packages=find_packages(),  # Automatically find the package
     install_requires=[
         "pyautogui",  # Add dependencies here
