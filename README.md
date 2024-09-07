@@ -1,6 +1,9 @@
 # Still Alive
 
-`Still Alive` is a Python package and **command-line tool** designed to keep your system from going idle by simulating mouse movements at specified intervals. Whether you're giving a presentation, monitoring long-running tasks, or simply want to prevent your screen from locking, Still Alive can automate mouse movements and ensure your system stays active.
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/pythonpioneer/Still-Alive)
+[![PyPI](https://img.shields.io/badge/PyPI-StillAlive-orange?logo=pypi)](https://pypi.org/project/still-alive/)
+
+`Still Alive` is a Python package and **command-line tool** designed to keep your system from going idle by simulating mouse movements at specified intervals. Whether you're giving a presentation, monitoring long-running tasks, or simply want to prevent your screen from locking, `Still Alive` can automate mouse movements and ensure your system stays active.
 
 With `Still Alive`, you can customize when the mouse movements begin and end, as well as the frequency of those movements. The tool is command-line friendly and offers flexible configuration options to suit different scenarios.
 

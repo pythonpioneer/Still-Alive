@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="still_alive",  # Package name
-    version="1.1.0",  # Version
+    version="1.1.1",  # Version
     packages=find_packages(),  # Automatically find the package
     install_requires=[
         "pyautogui",  # Add dependencies here
@@ -21,6 +21,12 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
+        "License :: OSI Approved :: MIT License",
+        "Environment :: Console",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Utilities",
+        "Development Status :: 5 - Production/Stable",
+        "programming Language :: Python :: 3.6",
     ],
     python_requires='>=3.6',
 )
