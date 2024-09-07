@@ -49,23 +49,24 @@ def main():
     parser = argparse.ArgumentParser(description="Move mouse slightly within a specified time range.")
 
     # Add arguments for start duration, end duration, start time, and end time
-    parser.add_argument('-sd', '--start_duration', type=int, help="Start duration in minutes from now", default=0)
-    parser.add_argument('-ed', '--end_duration', type=int, help="End duration in minutes from now")
-    parser.add_argument('-st', '--start_time', type=parse_time_arg, help="Start time in 24-hour format (HH:MM)", required=False)
-    parser.add_argument('-et', '--end_time', type=parse_time_arg, help="End time in 24-hour format (HH:MM)", required=False)
+    parser.add_argument('-sd', '--start-duration', type=int, help="Start duration in minutes from now", default=0)
+    parser.add_argument('-ed', '--end-duration', type=int, help="End duration in minutes from now")
+    parser.add_argument('-st', '--start-time', type=parse_time_arg, help="Start time in 24-hour format (HH:MM)", required=False)
+    parser.add_argument('-et', '--end-time', type=parse_time_arg, help="End time in 24-hour format (HH:MM)", required=False)
 
     # Add the interval argument (how often to move the mouse)
     parser.add_argument('-i', '--interval', type=int, default=50, help="Interval between movements in seconds (default: 50 seconds)")
 
     args = parser.parse_args()
 
-    # Custom validation: either end_time (et) or end_duration (ed) is required
+    # Custom validation: either end_time (et) or end_duration (ed) is required, else it will run for 1 hour with default interval
     if not args.end_time and not args.end_duration:
-        parser.error("Either --end_time (-et) or --end_duration (-ed) is required.")
+        args.end_duration = 60
 
     # Calculate the start and end times based on the provided arguments
     current_time = datetime.datetime.now()
 
+    # If both start_time (st) and start_duration (sd) are provided, start_time takes precedence
     if args.start_time:
         start_time = datetime.datetime.combine(current_time.date(), args.start_time)
     else:
