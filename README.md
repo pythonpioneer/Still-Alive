@@ -13,5 +13,5 @@
 You can install the package using `pip`:
 
 ```bash
-pip install my_mouse_mover
+pip install still-alive
 ```
