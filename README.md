@@ -118,3 +118,6 @@ If you've started `Still Alive` as a background process and want to stop it, fol
 
 This project is licensed under the `MIT License`, allowing for free use, modification, and distribution under permissive terms.
 
+## To Contribute
+
+To contribute, go to the [contributing.md file](https://github.com/pythonpioneer/pythonpioneer/blob/main/guidelines/CONTRIBUTING.md). I will appreciate your efforts.
